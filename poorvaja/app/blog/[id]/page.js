@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { getAllPostIds, getPostData } from '../../../lib/posts'
 import { remark } from 'remark'
 import html from 'remark-html'
@@ -16,7 +17,13 @@ export default async function Post({ params }) {
     .use(remarkGfm)
     .use(html)
     .process(postData.content)
-  const contentHtml = processedContent.toString()
+  let contentHtml = processedContent.toString()
+
+  // Replace image markdown with Next.js Image component
+  contentHtml = contentHtml.replace(
+    /<img\s+src="\.\.\/\.\.\/\.\.\/public(\/images\/blog\/[^"]+)"\s+alt="([^"]+)">/g,
+    (match, src, alt) => `<Image src="${src}" alt="${alt}" width={600} height={400} />`
+  )
 
   return (
     <div className="min-h-screen pt-32 pb-12 px-4">
@@ -61,7 +68,3 @@ export default async function Post({ params }) {
     </div>
   )
 }
-
-
-
-

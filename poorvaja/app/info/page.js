@@ -28,28 +28,21 @@ export default function InfoPage() {
           {/* Right Column - Content */}
           <div className="space-y-6">
             <div className="space-y-6 text-gray-300 text-lg leading-relaxed">
-              <p>
-              Hi, I’m Poorvaja. My journey started with a simple curiosity about how things work, which gradually turned into a passion for solving problems with code. 
-              Over the years, I’ve had the opportunity to work on diverse projects, ranging from machine learning in medical imaging to building interactive web applications. 
-              </p>
-              <p>
-              While I’ve gained experience in areas like AI, software development, and cloud technologies, I recognize that I’m just beginning to scratch the surface. 
-              I’m constantly learning—whether it’s through hands-on projects, exploring new technologies, or engaging with the wider community. 
-              I try to approach every challenge with humility, knowing there’s always room for growth and new perspectives.
-              </p>
-              <p>
-              In addition to my technical work, I enjoy sharing what I’ve learned through my blog. Writing has been a great way for me to process my thoughts, reflect on 
-              my experiences, and connect with others. 
-              </p>
-              <p>
-              When I’m not coding or writing, I like to experiment with new tools and technologies in my spare time. 
-              Whether it’s developing software, exploring generative AI, or collaborating on open-source projects, 
-              I strive to push the boundaries of what I can create.
-              </p>
-              <p>
-              Ultimately, I’m grateful for the opportunity to work in a field that continuously challenges and inspires me. I know that the world of technology is ever-evolving, 
-              and I’m excited to continue learning, growing, and contributing to the exciting changes ahead.
-              </p>
+            <p>Hi, I’m Poorvaja. My journey began with a curiosity about how things work, which grew into a passion for solving problems with code. Over the years, 
+              I’ve worked on projects ranging from machine learning in medical imaging to building interactive web applications.</p>
+              
+            <p>I’ve gained experience in AI, software development, and cloud technologies, but I know I’m just scratching the surface. 
+              I’m constantly learning through hands-on projects, exploring new technologies, and engaging with the community.
+               Every challenge is an opportunity for growth and new perspectives.</p>
+               
+            <p>I also enjoy sharing what I’ve learned through my blog. Writing helps me process thoughts, reflect on experiences, and connect with others.</p>
+
+            <p>When I’m not coding or writing, I experiment with new tools and technologies. Whether it’s developing software, 
+              exploring generative AI, or contributing to open-source projects, I strive to push creative boundaries. </p>
+
+            <p>I’m grateful to work in a field that challenges and inspires me. As technology evolves, I’m excited to keep learning, growing, and contributing to the changes ahead.</p>
+
+
             </div>
 
             {/* Social Links */}
